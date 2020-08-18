@@ -1,0 +1,204 @@
+@font-face {
+    font-family: 'Segoe Pro Semibold';
+    src: url(font/SegoePro-Semibold.woff);
+}
+@font-face {
+    font-family: 'Segoe Pro Bold';
+    src: url(font/SegoePro-Bold.woff);
+}
+
+$regular: 'Segoe Pro Semibold';
+$bold: 'Segoe Pro Bold';
+$white: #fff;
+$offWhite: #F3F4FA;
+$black: #000;
+$lightBlue: #9EAFC4;
+$darkBlue: #1C314D;
+$green: #44E214;
+$red: #F02928;
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    font-family: $regular;
+    overflow-x: hidden;
+}
+nav {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    height: 5rem;
+    div {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .nav-left {
+        a {
+            width: 150px;
+            height: 50px;
+            display: block;
+            background-image: url(images/logo.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+    }
+    .nav-right {
+        a {
+            font-size: 1.2rem;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            color: $white;
+            mix-blend-mode: difference;
+        }
+        .client {
+            border: 2px solid $white;
+            padding: 12px 23px;
+            border-radius: 13px;
+        }
+    }
+}
+nav::after {
+    content: "";
+    background-image: url(images/circle.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1200px;
+    height: 1200px;
+    display: block;
+    position: absolute;
+    right: -38%;
+    top: -85%;
+    z-index: -1;
+}
+.landing-content {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    display: flex;
+    .landing-left {
+        width: 60%;
+        h2 {
+            font-size: 1rem;
+            text-transform: uppercase;
+            color: $red;
+            font-family: $bold;
+        }
+        p {
+            font-size: 2rem;
+            color: $darkBlue;
+            line-height: 3rem;
+        }
+        h3 {
+            margin-top: 1rem;
+            color: $darkBlue;
+            line-height: 2rem;
+        }
+        div {
+            margin-top: 1.6rem;
+            display: flex;
+            .button {
+                border-radius: 13px;
+                padding: 13px 25px;
+                background-color: $darkBlue;
+                color: $white;
+                cursor: pointer;
+                transition: 0.2s ease-in;
+                &:hover {
+                    filter: brightness(120%);
+                }
+                &:first-of-type {
+                    margin-right: 2rem;
+                    background-color: $red;
+                }
+            }
+        }
+    }
+    .landing-right {
+        width: 40%;
+        div {
+            width: 19rem;
+            height: 32rem;
+            background-color: $offWhite;
+            border-radius: 24px;
+            margin-right: auto;
+            margin-left: auto;
+            //margin-bottom: auto;
+        }
+    }
+}
+.info-row {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-between;
+    div {
+        width: 30%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+        h5 {
+            font-family: $bold;
+            text-transform: uppercase;
+            font-size: 1rem;
+            color: $lightBlue;
+            margin-bottom: 0.8rem;
+        }
+        p {
+            font-size: 1.2rem;
+            color: $darkBlue;
+            line-height: 2rem;
+        }
+    }
+    div:nth-of-type(1) { background-image: url(images/discountrow.svg); }
+    div:nth-of-type(2) { background-image: url(images/fuelrow.svg); }
+    div:nth-of-type(3) { background-image: url(images/inforow.svg); }
+
+}
+.start-row {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15rem;
+    h2 {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+        color: $red;
+    }
+    .slider-wrap {
+        display: flex;
+        justify-content: space-between;
+        div {
+            width: 20%;
+            img {
+            }
+            p {
+                margin-top: 1.5rem;
+                color: $lightBlue;
+                font-size: 1.1rem;
+                letter-spacing: 0.8px;
+                font-family: $regular;
+                line-height: 1.8rem;
+                transition: 0.2s ease-in;
+            }
+        }
+    }
+    
+}
+
+
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {}

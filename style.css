@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'Segoe Pro Semibold';
+  src: url(font/SegoePro-Semibold.woff);
+}
+
+@font-face {
+  font-family: 'Segoe Pro Bold';
+  src: url(font/SegoePro-Bold.woff);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  font-family: "Segoe Pro Semibold";
+  overflow-x: hidden;
+}
+
+nav {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  height: 5rem;
+}
+
+nav div {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+nav .nav-left a {
+  width: 150px;
+  height: 50px;
+  display: block;
+  background-image: url(images/logo.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+nav .nav-right a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  margin-left: 1.5rem;
+  color: #fff;
+  mix-blend-mode: difference;
+}
+
+nav .nav-right .client {
+  border: 2px solid #fff;
+  padding: 12px 23px;
+  border-radius: 13px;
+}
+
+nav::after {
+  content: "";
+  background-image: url(images/circle.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1200px;
+  height: 1200px;
+  display: block;
+  position: absolute;
+  right: -38%;
+  top: -85%;
+  z-index: -1;
+}
+
+.landing-content {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.landing-content .landing-left {
+  width: 60%;
+}
+
+.landing-content .landing-left h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: #F02928;
+  font-family: "Segoe Pro Bold";
+}
+
+.landing-content .landing-left p {
+  font-size: 2rem;
+  color: #1C314D;
+  line-height: 3rem;
+}
+
+.landing-content .landing-left h3 {
+  margin-top: 1rem;
+  color: #1C314D;
+  line-height: 2rem;
+}
+
+.landing-content .landing-left div {
+  margin-top: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.landing-content .landing-left div .button {
+  border-radius: 13px;
+  padding: 13px 25px;
+  background-color: #1C314D;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+
+.landing-content .landing-left div .button:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
+.landing-content .landing-left div .button:first-of-type {
+  margin-right: 2rem;
+  background-color: #F02928;
+}
+
+.landing-content .landing-right {
+  width: 40%;
+}
+
+.landing-content .landing-right div {
+  width: 19rem;
+  height: 32rem;
+  background-color: #F3F4FA;
+  border-radius: 24px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.info-row {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.info-row div {
+  width: 30%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.info-row div h5 {
+  font-family: "Segoe Pro Bold";
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: #9EAFC4;
+  margin-bottom: 0.8rem;
+}
+
+.info-row div p {
+  font-size: 1.2rem;
+  color: #1C314D;
+  line-height: 2rem;
+}
+
+.info-row div:nth-of-type(1) {
+  background-image: url(images/discountrow.svg);
+}
+
+.info-row div:nth-of-type(2) {
+  background-image: url(images/fuelrow.svg);
+}
+
+.info-row div:nth-of-type(3) {
+  background-image: url(images/inforow.svg);
+}
+
+.start-row {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15rem;
+}
+
+.start-row h2 {
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  color: #F02928;
+}
+
+.start-row .slider-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.start-row .slider-wrap div {
+  width: 20%;
+}
+
+.start-row .slider-wrap div p {
+  margin-top: 1.5rem;
+  color: #9EAFC4;
+  font-size: 1.1rem;
+  letter-spacing: 0.8px;
+  font-family: "Segoe Pro Semibold";
+  line-height: 1.8rem;
+  -webkit-transition: 0.2s ease-in;
+  transition: 0.2s ease-in;
+}
+/*# sourceMappingURL=style.css.map */
