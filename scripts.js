@@ -19,9 +19,13 @@ $.fn.isOnScreen = function(){
 
 };
 //todo spustit pouze jednou
+var fireOnce = false;
+
 $(document).ready(function(){
     $(window).scroll(function(){
-        if ($('.slider-wrap').isOnScreen()) {
+        if ($('.slider-wrap').isOnScreen() && !fireOnce ) {
+
+            fireOnce = true;
 
             setTimeout(function() {
                 $(".img1").attr("src", "images/slider/oneRed.png");
@@ -60,7 +64,6 @@ $(document).ready(function(){
             }, 16000);
 
         } else {
-            // The element is NOT visible, do something else
         }
     });
 });
