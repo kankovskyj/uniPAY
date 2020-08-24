@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f02928">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>uniPAY Aplikace</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
+    <div class="nav-mobile hide">
+       <div class="nav-mobile-content">
+        <a class="nav-item" href="#info">O aplikaci</a>
+        <a class="nav-item" href="#download">Stáhnout</a>
+        <a class="nav-item" href="#" class="client">Vlastníte pumpu?</a>
+       </div>
+    </div>
+
     <nav>
         <div class="nav-left">
             <a href="#"></a>
         </div>
 
+        <div class="nav-right-mobile">
+            <div class="burger"></div>
+        </div>
+
         <div class="nav-right">
-            <a href="#">O aplikaci</a>
-            <a href="#">Stáhnout</a>
+            <a href="#info">O aplikaci</a>
+            <a href="#download">Stáhnout</a>
             <a href="#" class="client">Vlastníte pumpu?</a>
         </div>
     </nav>
@@ -25,8 +44,8 @@
             <p>uniPAY – mobilní aplikace s unikátní slevovou BONUS kartou pro bohatší svět řidičů a čerpacích stanic</p>
             <h3>Slevy, výhody i dokonalý přehled o čerpacích stanicích včetně upozornění na nové zajímavé akce – to vše a ještě více v jedné jediné aplikaci.</h4>
             <div>
-              <div class="button">Stáhnout aplikaci zdarma</div>
-              <div class="button">Načerpat více informací</div> 
+              <a href="#download" class="button">Stáhnout aplikaci zdarma</a>
+              <a href="#info" class="button">Načerpat více informací</a> 
             </div>
                
         </div>
@@ -35,8 +54,8 @@
         </div>
 
     </section>
-
-    <section class="info-row">
+    <div id="info"></div>
+    <section class="info-row" >
         <div>
             <h5>Slevové akce na dlani</h5>
             <p>Virtuální BONUS karta a neustálý online přehled o jednotlivých slevách, změnách, nových výhodách i třeba kávě zdarma</p>
@@ -127,7 +146,7 @@
             <p>• Neustálý online přehled o slevách a dalších výhodách</p>
             <p>• Nastavení oblíbených pohonných hmot zobrazovaných jako první</p>
             <p>• Informace o prodeji alternativních paliv</p>
-            <p>• Zdarma pro iOS i android</p>
+            <p>• Zdarma pro iOS i Android</p>
             <span>A to vše v jedné jediné aplikaci. Vaše peněženka tak už praská ve švech jen z ušetřených peněz, protože slevová BONUS karta a veškeré výhody jsou součástí vašeho telefonu.</span>
         </div>
         
@@ -147,16 +166,21 @@
             <img src="https://picsum.photos/120/90" width="120px" height="90px" alt="">
         </div>
     </section>
-
+    <div id="download"></div>
     <section class="download-content">
         <div class="download-left">
             <div></div>
         </div>
         <div class="download-right">
             <h2>uniPAY – tankuj chytře, tankuj rád</h2>
-            <p>Stáhněte si aplikaci a ihned využívejte všech výhod uniPAY. Zdarma pro iOS i android.</p>
-            <span class="placeholder">Již brzy na Apple Store a Google Play</span>            
+            <p>Stáhněte si aplikaci a ihned využívejte všech výhod uniPAY. Zdarma pro iOS i Android.</p>
+            <span class="placeholder">Již brzy na Apple Store a Google Play</span>
+            </br>
+            <p class="footer">UNICODE SYSTEMS, s.r.o. Vyšehrad Garden, Na Pankráci 322/26, 140 00 Praha</p>
+          
         </div>
+
+
     </section>
 
 

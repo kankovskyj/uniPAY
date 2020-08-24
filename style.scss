@@ -16,15 +16,30 @@ $lightBlue: #9EAFC4;
 $darkBlue: #1C314D;
 $green: #44E214;
 $red: #F02928;
+.stop-scrolling { height: 100%; overflow: hidden; }
+.hide { display: none; }
 
 * {
     padding: 0;
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     width: 100%;
     font-family: $regular;
     overflow-x: hidden;
+}
+.nav-mobile {
+    position: absolute;
+        top: 0;
+        left: 0;
+        div {
+            a {
+                color: $white;
+            }
+        }
 }
 nav {
     width: 80%;
@@ -48,18 +63,31 @@ nav {
             background-size: contain;
         }
     }
+    .nav-right-mobile {
+        display: none;
+    }
     .nav-right {
+        display: flex;
+        align-items: center;
         a {
             font-size: 1.2rem;
             text-decoration: none;
             margin-left: 1.5rem;
             color: $white;
+            transition: 0.3s ease-in;
+            padding-bottom: 5px;
             // TODO mix-blend-mode: ;
+            &:hover {
+                box-shadow: inset 0px -86px 0px -84px rgba(255,255,255,1);
+            }
         }
         .client {
             border: 2px solid $white;
-            padding: 12px 23px;
             border-radius: 13px;
+            padding: 13px 25px;
+            &:hover {
+                box-shadow: none;
+            }
         }
     }
 }
@@ -104,6 +132,7 @@ nav::after {
             margin-top: 1.6rem;
             display: flex;
             .button {
+                text-decoration: none;
                 border-radius: 13px;
                 padding: 13px 25px;
                 background-color: $darkBlue;
@@ -328,8 +357,6 @@ nav::after {
         }
     }
 }
-
-
 .download-content {
     margin-top: 12rem;
     width: 90%;
@@ -365,14 +392,18 @@ nav::after {
             margin-bottom: 2rem;
         }
         span {
+            margin-top: 2rem;
             color: $red;
             font-size: 2rem;
         }
+        .footer {
+            margin-left: 3rem;
+            margin-top: 15rem;
+            color: $darkBlue;
+            font-size: 1rem;
+        }
     }
 }
-
-
-
 .download-content::after {
     content: "";
     background-image: url(images/circle.svg);
@@ -390,4 +421,119 @@ nav::after {
 
 
 
-@media (min-width: 320px) and (max-width: 480px) {}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1200px) {
+    body {
+        //background: red;
+    }
+    .nav-mobile {
+        width: 100vw;
+        height: 100vh;
+        background: $darkBlue;
+        position: absolute;
+        top: 0;
+        left: 0;
+            div {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                width: 100%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                display: flex;
+                flex-direction: column;
+                font-size: 3rem;
+                a {
+                    margin: 1rem;
+                    text-decoration: none;
+                    color: $white;
+                }
+            }
+    }
+    nav {
+        .nav-right-mobile {
+            display: block;
+            z-index: 999;
+            .burger {
+                width: 30px;
+                height: 30px;
+                background-image: url(images/burger.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                cursor: pointer;
+            }
+        }
+        .nav-right {
+            display: none;
+        }
+    }
+    nav::after {
+        width: 900px;
+        height: 900px;
+        display: block;
+        right: -42%;
+        top: -105%;
+    }
+}
+@media (max-width: 992px) {	
+	body {
+        //background: orange;
+    }
+    .nav-mobile {
+        div {
+            font-size: 2.3rem;
+        }
+}
+    nav::after {
+        width: 900px;
+        height: 900px;
+        display: block;
+        right: -48%;
+        top: -108%;
+    }
+}
+@media (max-width: 768px) {
+	body {
+        background: yellow;
+    }
+    .nav-mobile {
+            div {
+                font-size: 2rem;
+            }
+    }
+    nav::after {
+        width: 250px;
+        height: 250px;
+        display: block;
+        right: -10%;
+        top: -20%;
+    }
+}
+@media (max-width: 320px) {
+	body {
+        background: yellow;
+    }
+    .nav-mobile {
+            div {
+                font-size: 1.5rem;
+            }
+    }
+    nav::after {
+        width: 250px;
+        height: 250px;
+        display: block;
+        right: -10%;
+        top: -20%;
+    }
+}

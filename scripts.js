@@ -1,3 +1,22 @@
+$(".burger").click(function(){
+    $(".nav-mobile").toggleClass("hide");
+    $("#body").toggleClass("stop-scrolling")
+})
+
+$(".nav-item").click(function(){
+    $(".nav-mobile").toggleClass("hide");
+    $("#body").toggleClass("stop-scrolling")
+})
+
+//fix problem s navigaci, kdyz je otevrena a probehne resize
+
+
+
+
+
+
+
+
 
 
 $.fn.isOnScreen = function(){

@@ -8,15 +8,38 @@
   src: url(font/SegoePro-Bold.woff);
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
+.hide {
+  display: none;
+}
+
 * {
   padding: 0;
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   width: 100%;
   font-family: "Segoe Pro Semibold";
   overflow-x: hidden;
+}
+
+.nav-mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav-mobile div a {
+  color: #fff;
 }
 
 nav {
@@ -47,17 +70,43 @@ nav .nav-left a {
   background-size: contain;
 }
 
+nav .nav-right-mobile {
+  display: none;
+}
+
+nav .nav-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 nav .nav-right a {
   font-size: 1.2rem;
   text-decoration: none;
   margin-left: 1.5rem;
   color: #fff;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+  padding-bottom: 5px;
+}
+
+nav .nav-right a:hover {
+  -webkit-box-shadow: inset 0px -86px 0px -84px white;
+          box-shadow: inset 0px -86px 0px -84px white;
 }
 
 nav .nav-right .client {
   border: 2px solid #fff;
-  padding: 12px 23px;
   border-radius: 13px;
+  padding: 13px 25px;
+}
+
+nav .nav-right .client:hover {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 nav::after {
@@ -115,6 +164,7 @@ nav::after {
 }
 
 .landing-content .landing-left div .button {
+  text-decoration: none;
   border-radius: 13px;
   padding: 13px 25px;
   background-color: #1C314D;
@@ -458,8 +508,16 @@ nav::after {
 }
 
 .download-content .download-right span {
+  margin-top: 2rem;
   color: #F02928;
   font-size: 2rem;
+}
+
+.download-content .download-right .footer {
+  margin-left: 3rem;
+  margin-top: 15rem;
+  color: #1C314D;
+  font-size: 1rem;
 }
 
 .download-content::after {
@@ -474,5 +532,106 @@ nav::after {
   left: -40%;
   top: 20%;
   z-index: -1;
+}
+
+@media (max-width: 1200px) {
+  .nav-mobile {
+    width: 100vw;
+    height: 100vh;
+    background: #1C314D;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .nav-mobile div {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    font-size: 3rem;
+  }
+  .nav-mobile div a {
+    margin: 1rem;
+    text-decoration: none;
+    color: #fff;
+  }
+  nav .nav-right-mobile {
+    display: block;
+    z-index: 999;
+  }
+  nav .nav-right-mobile .burger {
+    width: 30px;
+    height: 30px;
+    background-image: url(images/burger.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+  }
+  nav .nav-right {
+    display: none;
+  }
+  nav::after {
+    width: 900px;
+    height: 900px;
+    display: block;
+    right: -42%;
+    top: -105%;
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-mobile div {
+    font-size: 2.3rem;
+  }
+  nav::after {
+    width: 900px;
+    height: 900px;
+    display: block;
+    right: -48%;
+    top: -108%;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    background: yellow;
+  }
+  .nav-mobile div {
+    font-size: 2rem;
+  }
+  nav::after {
+    width: 250px;
+    height: 250px;
+    display: block;
+    right: -10%;
+    top: -20%;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    background: yellow;
+  }
+  .nav-mobile div {
+    font-size: 1.5rem;
+  }
+  nav::after {
+    width: 250px;
+    height: 250px;
+    display: block;
+    right: -10%;
+    top: -20%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
