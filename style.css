@@ -29,7 +29,10 @@ html {
 body {
   width: 100%;
   font-family: "Segoe Pro Semibold";
-  overflow-x: hidden;
+  background-repeat: no-repeat;
+  background-size: 650px;
+  background-image: url(images/circle2.svg), url(images/circle3.svg);
+  background-position: top right, bottom left;
 }
 
 .nav-mobile {
@@ -109,20 +112,6 @@ nav .nav-right .client:hover {
           box-shadow: none;
 }
 
-nav::after {
-  content: "";
-  background-image: url(images/circle.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 1200px;
-  height: 1200px;
-  display: block;
-  position: absolute;
-  right: -38%;
-  top: -85%;
-  z-index: -1;
-}
-
 .landing-content {
   width: 80%;
   margin-left: auto;
@@ -134,7 +123,8 @@ nav::after {
 }
 
 .landing-content .landing-left {
-  width: 60%;
+  width: 50%;
+  margin-right: auto;
 }
 
 .landing-content .landing-left h2 {
@@ -470,8 +460,6 @@ nav::after {
   width: 90%;
   margin-right: auto;
   position: relative;
-  height: 80vh;
-  overflow-y: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -520,21 +508,10 @@ nav::after {
   font-size: 1rem;
 }
 
-.download-content::after {
-  content: "";
-  background-image: url(images/circle.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 1200px;
-  height: 1200px;
-  display: block;
-  position: absolute;
-  left: -40%;
-  top: 20%;
-  z-index: -1;
-}
-
 @media (max-width: 1200px) {
+  body {
+    background-size: 400px;
+  }
   .nav-mobile {
     width: 100vw;
     height: 100vh;
@@ -581,57 +558,32 @@ nav::after {
   nav .nav-right {
     display: none;
   }
-  nav::after {
-    width: 900px;
-    height: 900px;
-    display: block;
-    right: -42%;
-    top: -105%;
-  }
 }
 
 @media (max-width: 992px) {
+  body {
+    background-size: 300px;
+  }
   .nav-mobile div {
     font-size: 2.3rem;
-  }
-  nav::after {
-    width: 900px;
-    height: 900px;
-    display: block;
-    right: -48%;
-    top: -108%;
   }
 }
 
 @media (max-width: 768px) {
   body {
-    background: yellow;
+    background-size: 200px;
   }
   .nav-mobile div {
     font-size: 2rem;
-  }
-  nav::after {
-    width: 250px;
-    height: 250px;
-    display: block;
-    right: -10%;
-    top: -20%;
   }
 }
 
 @media (max-width: 320px) {
   body {
-    background: yellow;
+    background-size: 100px;
   }
   .nav-mobile div {
     font-size: 1.5rem;
-  }
-  nav::after {
-    width: 250px;
-    height: 250px;
-    display: block;
-    right: -10%;
-    top: -20%;
   }
 }
 /*# sourceMappingURL=style.css.map */
