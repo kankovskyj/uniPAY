@@ -1039,7 +1039,8 @@ nav .nav-right .client:hover {
   .landing-content .landing-right div {
     width: 10rem;
     height: 18rem;
-    margin-top: 8rem;
+    margin-top: 7rem;
+    margin-right: -4rem;
     z-index: -3;
   }
   .info-row div {
