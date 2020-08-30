@@ -113,6 +113,7 @@ nav {
             text-transform: uppercase;
             color: $red;
             font-family: $bold;
+            margin-bottom: 0.5rem;
         }
         p {
             font-size: 2rem;
@@ -203,8 +204,6 @@ nav {
         justify-content: space-between;
         div {
             width: 20%;
-            img {
-            }
             p {
                 margin-top: 1.5rem;
                 color: $lightBlue;
@@ -219,15 +218,20 @@ nav {
     
 }
 .map-content {
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15rem;
     display: flex;
     justify-content: space-between;
+    background-image: url(images/map/map.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
     .map-left {
         width: 40%;
         margin-right: auto;
+        margin-left: auto;
         display: flex;
         flex-direction: column;
         img:nth-of-type(1) {
@@ -262,6 +266,7 @@ nav {
     .map-right {
         width: 40%;
         margin-left: auto;
+        margin-right: auto;
         h2 {
             font-size: 3.5rem;
             margin-bottom: 2rem;
@@ -342,8 +347,9 @@ nav {
         width: 100%;
         margin-left: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         img {
+            margin: 2rem;
             cursor: pointer;
             transition: 0.2s ease-in;
             filter: grayscale(100%);
@@ -414,7 +420,7 @@ nav {
 
 
 
-@media (max-width: 1200px) {
+@media (max-width: 1224px) {
     body {
         background-size: 400px;
     }
@@ -603,6 +609,8 @@ nav {
         }
     }
     .map-content {
+        width: 80%;
+        background: none;
         .map-left {
             img {
                 width: 90px;
@@ -760,8 +768,6 @@ nav {
                 width: 100%;
                 text-align: center;
                 margin-top: 6rem;
-                img {
-                }
                 p {
                     margin-top: 1.5rem;
                     font-size: 2rem;
@@ -967,8 +973,6 @@ nav {
            flex-direction: column;
             div {
                 margin-top: 5rem;
-                img {
-                }
                 p {
                     margin-top: 1.5rem;
                     font-size: 1.5rem;
@@ -980,6 +984,8 @@ nav {
     }
     .map-content {
         margin-top: 10rem;
+        width: 80%;
+        background: none;
         .map-left {
             display: none;
         }

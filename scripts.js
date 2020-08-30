@@ -53,34 +53,34 @@ $(document).ready(function(){
             setTimeout(function() {
                 $(".img1").attr("src", "images/slider/one.png");
                 $( ".text1" ).css("color", "#9EAFC4");
-            }, 4000);
+            }, 2000);
 
             setTimeout(function() {
                 $(".img2").attr("src", "images/slider/twoRed.png");
                 $( ".text2" ).css("color", "#F02928");
-            }, 4000);
+            }, 2000);
             setTimeout(function() {
                 $(".img2").attr("src", "images/slider/two.png");
                 $( ".text2" ).css("color", "#9EAFC4");
-            }, 8000);
+            }, 6000);
 
             setTimeout(function() {
                 $(".img3").attr("src", "images/slider/threeRed.png");
                 $( ".text3" ).css("color", "#F02928");
-            }, 8000);
+            }, 6000);
             setTimeout(function() {
                 $(".img3").attr("src", "images/slider/three.png");
                 $( ".text3" ).css("color", "#9EAFC4");
-            }, 12000);
+            }, 10000);
 
             setTimeout(function() {
                 $(".img4").attr("src", "images/slider/fourRed.png");
                 $( ".text4" ).css("color", "#F02928");
-            }, 12000);
+            }, 10000);
             setTimeout(function() {
                 $(".img4").attr("src", "images/slider/four.png");
                 $( ".text4" ).css("color", "#9EAFC4");
-            }, 16000);
+            }, 14000);
 
         } else {
         }
