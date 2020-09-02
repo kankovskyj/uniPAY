@@ -34,6 +34,7 @@ body {
     font-family: $regular;
     background-repeat: no-repeat;
     background-size: 650px;
+    background-color: $white;
     background-image: url(images/circle2.svg), url(images/circle3.svg);
     background-position: top right, bottom left;
     //pokud nejdou 3 background-img, bud novy element s mapou a z-index -999, nebo download sekce 100% vw a background-image kolečka tam
@@ -136,6 +137,7 @@ nav {
                 color: $white;
                 cursor: pointer;
                 transition: 0.2s ease-in;
+                box-shadow: 2px 5px 7px #d8d8d860;
                 &:hover {
                     filter: brightness(120%);
                 }
@@ -171,7 +173,7 @@ nav {
         background-size: contain;
         background-repeat: no-repeat;
         background-position: right;
-        h5 {
+        h3 {
             font-family: $bold;
             text-transform: uppercase;
             font-size: 1rem;
@@ -296,7 +298,7 @@ nav {
         margin-bottom: 5rem;
         img {
             width: 2rem;
-            height: 2rem;
+            height: 1.8rem;
             margin-right: 1.5rem;
         }
         h2 {
@@ -405,6 +407,11 @@ nav {
     text-align: right;
     margin-top: 2rem;
     margin-bottom: 1rem;
+    a {
+        text-decoration: underline;
+        color: $darkBlue;
+        cursor: pointer;
+    }
 }
 
 
@@ -414,10 +421,18 @@ nav {
 
 
 
+//ultrawide
+@media (min-width: 2000px) {
+    body {
+        background-size: 750px;
+    }
+}
 
-
-
-
+// @media (min-aspect-ration: 2/1) {
+//     body {
+//         display: none;
+//     }
+// }
 
 
 @media (max-width: 1224px) {
@@ -1097,4 +1112,11 @@ nav {
         margin-top: 2rem;
         margin-bottom: 1rem;
     }
+}
+
+
+
+//VOP
+.vop-body {
+    background-image: none;
 }
