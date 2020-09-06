@@ -1009,6 +1009,9 @@ nav .nav-right .client:hover {
     font-size: 1.4rem;
     margin-bottom: 2rem;
   }
+  .footer a {
+    color: #9EAFC4;
+  }
 }
 
 @media (max-width: 420px) {
@@ -1214,56 +1217,5 @@ nav .nav-right .client:hover {
     margin-top: 2rem;
     margin-bottom: 1rem;
   }
-}
-
-.vop-body {
-  background-image: none;
-  width: 100%;
-}
-
-.vop-body .vop-nav {
-  background: #F3F4FA;
-  width: 100%;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.vop-body .vop-nav div {
-  width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.vop-body .vop-nav div a:first-of-type {
-  font-size: 1.5rem;
-  text-decoration: none;
-  color: #1C314D;
-}
-
-.vop-body .vop-nav div p {
-  color: #1C314D;
-  font-size: 1.5rem;
-  text-decoration: none;
-}
-
-.vop-body .vop-nav div .logo {
-  width: 120px;
-  height: 50px;
-  display: block;
-  background-image: url(images/logo.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
 }
 /*# sourceMappingURL=style.css.map */

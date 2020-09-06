@@ -896,6 +896,11 @@ nav {
             }
         }
     }
+    .footer {
+        a {
+            color: $lightBlue;
+        }
+    }
 }
 
 @media (max-width: 420px) {
@@ -1104,48 +1109,6 @@ nav {
         font-size: 0.5rem;
         text-align: right;
         margin-top: 2rem;
-        margin-bottom: 1rem;
-    }
-}
-
-
-
-//VOP
-.vop-body {
-    background-image: none;
-    width: 100%;
-    .vop-nav {
-        background: $offWhite;
-        width: 100%;
-        flex-direction: row;
-        div {
-            width: 80%;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-left: auto;
-            margin-right: auto;
-            a:first-of-type {
-                font-size: 1.5rem;
-                text-decoration: none;
-                color: $darkBlue;
-            }
-            p {
-                color: $darkBlue;
-                font-size: 1.5rem;
-                text-decoration: none;
-
-            }
-            .logo {
-                width: 120px;
-                height: 50px;
-                display: block;
-                background-image: url(images/logo.svg);
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-        }
-        
+        margin-bottom: 1rem
     }
 }
