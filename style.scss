@@ -157,6 +157,13 @@ nav {
             border-radius: 24px;
             margin-right: auto;
             margin-left: auto;
+            background-image: url(images/screen123.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-top: 10px solid #EFEFEF;
+            padding-bottom: 35px;
+            //border: 13px solid $offWhite;
             //margin-bottom: auto;
         }
     }
@@ -376,7 +383,11 @@ nav {
             border-radius: 24px;
             margin-right: auto;
             margin-left: auto;
-            //margin-bottom: auto;
+            background-image: url(images/screen2.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-position: 25% 90%;
+            padding-bottom: 35px;
         }
     }
     .download-right {
@@ -494,7 +505,11 @@ nav {
             width: 30%;
             div {
                 width: 15rem;
-                height: 28rem;
+                height: 25rem;
+                background-position: center;
+                background-size: contain;
+                padding: none;
+                border: none;
             }
         }
     }
