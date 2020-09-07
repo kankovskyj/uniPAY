@@ -1005,6 +1005,7 @@ nav .nav-right .client:hover {
   }
   .partners-content .partners-row img {
     margin-top: 2rem;
+    min-width: 170px;
   }
   .download-content .download-left div {
     width: 16rem;
